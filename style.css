@@ -4,8 +4,73 @@
 body {
 	font-family: sans-serif;
 	font-size: 14px;
+	box-sizing: border-box;
 }
 
 h1 {
 	text-align: center;
+}
+
+@media (max-width: 800px) {
+	.tym {
+		display: flex;
+		flex-direction:column;
+		justify-content: space-between;
+		width: 500px;
+		margin: 20px;
+	}
+
+	.osoba {
+		border: 1px solid rgb(189, 188, 188);
+		box-shadow: 0px 1px rgb(184, 183, 183);
+		border-radius: 2%;
+		margin: 10px;
+		padding: 20px;
+		display: flex;
+		justify-content: space-around;
+		}
+
+.foto img {
+	border-radius: 50%;
+}
+
+.popis {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+p {word-wrap: wrap}
+}
+
+@media (min-width: 800px) {
+
+	.tym {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		flex: 0 0 100%;
+		width: 500px;
+	}
+
+	.osoba {
+		border: 1px solid rgb(189, 188, 188);
+		box-shadow: 0px 1px rgb(184, 183, 183);
+		border-radius: 2%;
+		flex: 0 0 100%;
+		margin: 10px;
+		padding: 20px;
+		display: flex;
+		justify-content: space-around;
+		}
+
+.foto img {
+	border-radius: 50%;
+}
+
+.popis {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+p {word-wrap: wrap}
 }
